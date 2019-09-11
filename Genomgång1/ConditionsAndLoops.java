@@ -51,9 +51,13 @@ public class ConditionsAndLoops {
             // Kod som körs så länge vilkoret är sant
         }
 
+
+
         for (Integer tal : massaHeltal){
             // Kod som körs för varje entry(sak) i en given lista
         }
+
+        
 
         while (sanning)
         {
