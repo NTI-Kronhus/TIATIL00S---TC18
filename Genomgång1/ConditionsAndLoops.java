@@ -56,6 +56,5 @@ public class ConditionsAndLoops {
         {
             // Kod som körs så länge vilkoret är sant
         }
-	}
-
+    }
 }
