@@ -3,6 +3,7 @@ package sample;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.NodeOrientation;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -33,7 +34,6 @@ public class Main extends Application implements EventHandler<ActionEvent> {
     @Override
     public void start(Stage window) throws Exception {
         _window = window;
-
         generateFlags();
 
         _window.setScene(_mainScene);
@@ -47,6 +47,9 @@ public class Main extends Application implements EventHandler<ActionEvent> {
     }
 
     private HBox buttons(){
+
+        _buttonBox.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
+
         _sweKey = new Button("Sweden");
         _sweKey.setOnAction(this);
 
